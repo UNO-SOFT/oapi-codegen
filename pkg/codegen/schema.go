@@ -165,7 +165,7 @@ func GenerateGoSchema(sref *openapi3.SchemaRef, path []string) (Schema, error) {
 
 	outSchema := Schema{
 		Description: StringToGoComment(schema.Description),
-		OAPISchema: schema,
+		OAPISchema:  schema,
 	}
 
 	// We can't support this in any meaningful way
@@ -343,30 +343,31 @@ func resolveType(schema *openapi3.Schema, path []string, outSchema *Schema) erro
 		outSchema.Properties = arrayType.Properties
 	case "integer":
 		// We default to int if format doesn't ask for something else.
-		if f == "int64" {
+		switch f {
+		case "int64":
 			outSchema.GoType = "int64"
-		} else if f == "int32" {
+		case "int32":
 			outSchema.GoType = "int32"
-		} else if f == "int16" {
+		case "int16":
 			outSchema.GoType = "int16"
-		} else if f == "int8" {
+		case "int8":
 			outSchema.GoType = "int8"
-		} else if f == "int" {
+		case "int":
 			outSchema.GoType = "int"
-		} else if f == "uint64" {
+		case "uint64":
 			outSchema.GoType = "uint64"
-		} else if f == "uint32" {
+		case "uint32":
 			outSchema.GoType = "uint32"
-		} else if f == "uint16" {
+		case "uint16":
 			outSchema.GoType = "uint16"
-		} else if f == "uint8" {
+		case "uint8":
 			outSchema.GoType = "uint8"
-		} else if f == "uint" {
+		case "uint":
 			outSchema.GoType = "uint"
-		} else if f == "" {
+		case "":
 			outSchema.GoType = "int"
-		} else {
-			return fmt.Errorf("invalid integer format: %s", f)
+		default:
+			return fmt.Errorf("invalid integer format: %q", f)
 		}
 	case "number":
 		// We default to float for "number"
