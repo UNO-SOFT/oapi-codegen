@@ -14,7 +14,7 @@ import (
 
 	externalRef0 "github.com/deepmap/oapi-codegen/internal/test/externalref/packageA"
 	externalRef1 "github.com/deepmap/oapi-codegen/internal/test/externalref/packageB"
-	"github.com/getkin/kin-openapi/openapi3"
+	"github.com/UNO-SOFT/kin-openapi/openapi3"
 )
 
 // Container defines model for Container.

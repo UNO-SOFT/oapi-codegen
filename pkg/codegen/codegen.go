@@ -23,7 +23,7 @@ import (
 	"strings"
 	"text/template"
 
-	"github.com/getkin/kin-openapi/openapi3"
+	"github.com/UNO-SOFT/kin-openapi/openapi3"
 	"github.com/pkg/errors"
 	"golang.org/x/tools/imports"
 

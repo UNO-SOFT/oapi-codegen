@@ -21,10 +21,10 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/getkin/kin-openapi/openapi3"
-	"github.com/getkin/kin-openapi/openapi3filter"
-	"github.com/getkin/kin-openapi/routers"
-	"github.com/getkin/kin-openapi/routers/legacy"
+	"github.com/UNO-SOFT/kin-openapi/openapi3"
+	"github.com/UNO-SOFT/kin-openapi/openapi3filter"
+	"github.com/UNO-SOFT/kin-openapi/routers"
+	"github.com/UNO-SOFT/kin-openapi/routers/legacy"
 	"github.com/labstack/echo/v4"
 	echomiddleware "github.com/labstack/echo/v4/middleware"
 )

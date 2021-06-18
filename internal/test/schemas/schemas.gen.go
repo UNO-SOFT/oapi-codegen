@@ -21,7 +21,7 @@ import (
 	"gopkg.in/yaml.v2"
 
 	"github.com/deepmap/oapi-codegen/pkg/runtime"
-	"github.com/getkin/kin-openapi/openapi3"
+	"github.com/UNO-SOFT/kin-openapi/openapi3"
 	"github.com/labstack/echo/v4"
 )
 

@@ -13,7 +13,7 @@ import (
 	"strings"
 
 	externalRef0 "github.com/deepmap/oapi-codegen/internal/test/externalref/packageB"
-	"github.com/getkin/kin-openapi/openapi3"
+	"github.com/UNO-SOFT/kin-openapi/openapi3"
 )
 
 // ObjectA defines model for ObjectA.

@@ -22,7 +22,7 @@ import (
 	"strings"
 	"unicode"
 
-	"github.com/getkin/kin-openapi/openapi3"
+	"github.com/UNO-SOFT/kin-openapi/openapi3"
 )
 
 var pathParamRE *regexp.Regexp

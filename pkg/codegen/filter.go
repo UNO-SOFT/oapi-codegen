@@ -1,6 +1,6 @@
 package codegen
 
-import "github.com/getkin/kin-openapi/openapi3"
+import "github.com/UNO-SOFT/kin-openapi/openapi3"
 
 func filterOperationsByTag(swagger *openapi3.T, opts Options) {
 	if len(opts.ExcludeTags) > 0 {
