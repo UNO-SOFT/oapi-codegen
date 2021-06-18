@@ -20,3 +20,5 @@ require (
 )
 
 go 1.14
+
+replace github.com/getkin/kin-openapi v0.61.0 => github.com/UNO-SOFT/kin-openapi v0.64.0-alpha1
