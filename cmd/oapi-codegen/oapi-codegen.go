@@ -25,8 +25,8 @@ import (
 
 	"gopkg.in/yaml.v2"
 
-	"github.com/deepmap/oapi-codegen/pkg/codegen"
-	"github.com/deepmap/oapi-codegen/pkg/util"
+	"github.com/UNO-SOFT/oapi-codegen/pkg/codegen"
+	"github.com/UNO-SOFT/oapi-codegen/pkg/util"
 )
 
 func errExit(format string, args ...interface{}) {
@@ -45,7 +45,7 @@ var (
 	flagExcludeSchemas string
 	flagConfigFile     string
 	flagAliasTypes     bool
-	flagPrintVersion bool
+	flagPrintVersion   bool
 )
 
 type configuration struct {
